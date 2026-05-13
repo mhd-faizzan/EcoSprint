@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoSprint</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="game.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">EcoSprint</p>
+        <h1>EcoSprint</h1>
+        <p class="subtitle">7 days. 100kg CO2. GO.</p>
+      </div>
+    </header>
+
+    <main id="game-area" class="game-board">
+      <section class="stats-panel">
+        <div class="stat-card">
+          <span class="stat-label">Day</span>
+          <span class="stat-value" id="day-value">1 / 7</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Carbon Used</span>
+          <span class="stat-value" id="carbon-used">0 kg</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Budget Remaining</span>
+          <span class="stat-value" id="budget-remaining">100 kg</span>
+        </div>
+      </section>
+
+      <section class="progress-panel">
+        <div class="progress-label" id="budget-status">Stay under 100kg!</div>
+        <div class="progress-track" aria-label="Budget remaining">
+          <div class="progress-fill green" id="budget-progress"></div>
+        </div>
+      </section>
+
+      <section class="scenario-panel">
+        <h2>Scenario</h2>
+        <p id="scenario-text">Choose wisely for today's eco decision and keep your carbon score on track.</p>
+      </section>
+
+      <section id="choices-panel" class="choices-panel"></section>
+
+      <section class="feedback-panel" id="feedback-panel" aria-live="polite">
+        <p id="feedback-message">Select an option to see your impact and move to the next day.</p>
+      </section>
+    </main>
+
+    <div class="endgame-screen hidden" id="endgame-screen">
+      <div class="endgame-card">
+        <h2>Challenge Complete</h2>
+        <p class="endgame-summary" id="endgame-summary">You finished 7 days with <strong id="final-carbon">0kg</strong> CO2 used.</p>
+        <p class="endgame-status" id="endgame-status"></p>
+        <p class="endgame-comparison" id="endgame-comparison"></p>
+        <div class="tip-panel">
+          <h3>Personalized tips</h3>
+          <ul class="tip-list" id="endgame-tips"></ul>
+        </div>
+        <button class="restart-button" id="restart-button">Restart Challenge</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
