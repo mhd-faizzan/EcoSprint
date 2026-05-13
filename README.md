@@ -39,7 +39,7 @@ That's it. Works offline too.
 
 The average weekly carbon footprint is around 120kg CO2. Most people don't know that. Or what adds up. This game shows you — without being preachy. You mess up, you restart, you learn.
 
-Made this in a few hours for MLH Global Hack Week. Copilot did the heavy lifting, I just had the ideas.
+Made this for MLH Global Hack Week. Copilot did the heavy lifting, I just had the ideas.
 
 ## Tips You'll See
 
